@@ -2,7 +2,8 @@
 <%= render 'banner', header_text: 'Save any kind of movies', p_text: 'Your lists, anytime.' %>
 
 <div class="container">
-  <div class="cards mt-4 mb-2">
+  <div class='mt-3'> <h3>Your Lists</h3></div>
+  <div class="cards mt-3 mb-2">
     <% @lists.each do |list| %>
       <%= render 'card', list: list%>
     <% end %>
