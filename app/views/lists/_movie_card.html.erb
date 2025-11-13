@@ -1,0 +1,8 @@
+<%# For show page!!! %>
+<div class="container border p-0 rounded d-flex">
+  <%= image_tag movie.poster_url, style: "height: 250px" %>
+  <div class='pt-2 ps-2'>
+    <h4><%= movie.title.capitalize%></h4>
+    <p>Rating: <%= movie.rating %></p>
+  </div>
+</div>

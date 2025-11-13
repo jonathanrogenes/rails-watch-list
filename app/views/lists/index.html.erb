@@ -1,0 +1,10 @@
+<%= render 'navbar' %>
+<%= render 'banner', header_text: 'Save any kind of movies', p_text: 'Your lists, anytime.' %>
+
+<div class="container">
+  <div class="cards mt-4 mb-2">
+    <% @lists.each do |list| %>
+      <%= render 'card', list: list%>
+    <% end %>
+  </div>
+</div>
