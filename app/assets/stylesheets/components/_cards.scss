@@ -15,13 +15,21 @@
 .card-category:hover {
   transform: scale(1.05);
 }
+
+
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
 }
+
 .cards-movie {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
+  background: transparent;
+}
+.body {
+  background: black;
 }

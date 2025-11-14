@@ -9,7 +9,7 @@
   </div>
   <div class="cards-movie mt-4 mb-4">
     <% @list.bookmarks.each do |bookmark| %>
-      <%= render 'lists/movie_card', movie: bookmark.movie %>
+      <%= render 'lists/movie_card', bookmark: bookmark, movie: bookmark.movie %>
     <% end %>
   </div>
 </div>
