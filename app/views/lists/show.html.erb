@@ -1,14 +1,15 @@
 <%= render 'navbar' %>
-<%= render 'banner', header_text: "#{@list.name}", p_text: "Your #{@list.name} list." %>
+<%= render 'lists/banner',list: @list, header_text: @list.name, p_text: "Your #{@list.name} list." %>
+
 
 <div class="container">
-  <%= link_to "Add a movie", new_list_bookmark_path(@list), class: 'm-3 position-absolute end-0 btn btn-success shadow-sm border text-white text-decoration-none' %>
-</div>
 
-<div class="container">
-    <div class="cards-movie mt-4 mb-2">
-      <% @list.bookmarks.each do |bookmark| %>
-       <%= render 'lists/movie_card', movie: bookmark.movie %>
-      <% end %>
+  <div class='d-flex justify-content-end my-3'>
+   <%= link_to "Add a movie", new_list_bookmark_path(@list), class: 'btn btn-dark shadow-sm border text-white text-decoration-none' %>
+  </div>
+  <div class="cards-movie mt-4 mb-4">
+    <% @list.bookmarks.each do |bookmark| %>
+      <%= render 'lists/movie_card', movie: bookmark.movie %>
+    <% end %>
   </div>
 </div>

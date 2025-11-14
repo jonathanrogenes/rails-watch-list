@@ -1,6 +1,6 @@
 <%# Card for lists!!! %>
 <div class="container border p-0 rounded">
-  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= image_path "cinema.jpg" %>')">
+  <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path("cinema.jpg") %>')">
     <h3><%= link_to list.name.capitalize, list_path(list), class: 'text-decoration-none text-white' %></h3>
   </div>
 </div>

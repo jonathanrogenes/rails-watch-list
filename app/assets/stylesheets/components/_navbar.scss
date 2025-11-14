@@ -1,6 +1,7 @@
 .navbar-lewagon {
   justify-content: space-between;
-  background: rgb(244, 242, 242);
+  background: rgba(0, 0, 0, 0.923);
+  padding: 1rem 0;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -9,4 +10,24 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+}
+
+.navbar-lewagon .fa-film {
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+.fa-film:hover {
+  transform: scale(1.1);
+  color: rgba(147, 51, 234, 1);
+}
+
+.nav-item {
+  background: rgba(89, 18, 143, 0.923);
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background: rgba(28, 18, 143, 0.923);
 }

@@ -1,6 +1,9 @@
-<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url( <%= asset_path 'cinema.jpg' %> );">
+<div class="banner"
+     style="background-image:
+       linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+       url('<%= list.photo.attached? ? cl_image_path(list.photo.key) : image_path("cinema.jpg") %>')">
   <div class="container">
-    <h1 class='text-white text-center'><%= header_text%> </h1>
-    <p class='text-white text-center'><%= p_text %></p>
+    <h1 class='text-white text-left'><%= header_text %></h1>
+    <p class='text-white text-left'><%= p_text %></p>
   </div>
 </div>
